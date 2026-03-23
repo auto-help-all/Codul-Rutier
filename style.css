@@ -46,31 +46,37 @@ body {
   margin-left:2px;
 }
 
-/* ========== Hamburger ========== */
+/* HAMBURGER BUTTON */
 .hamburger {
-  position:absolute;
-  left:12px;
-  top:50%;
-  transform: translateY(-50%);
-  width:44px;
-  height:44px;
-  border-radius:8px;
-  background:transparent;
-  border: none;
-  padding:8px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  z-index: 1020;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    flex-direction: column;   /* 🔥 asta e cheia */
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px; /* spațiu între linii */
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    z-index: 2000;
 }
+
+/* cele 3 linii */
 .hamburger span {
-  display:block;
-  width:26px;
-  height:3px;
-  background:#002f4d; /* albastru inchis / marin */
-  border-radius:2px;
-  margin:3px 0;
-  transition: transform .25s ease, opacity .25s ease;
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #003366; /* albastru marin */
+    border-radius: 2px;
 }
 
 /* when menu open - animated X */
